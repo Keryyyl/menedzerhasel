@@ -62,19 +62,16 @@ export default function Login() {
               Terminal
             </h1>
             <div className="h-1 w-12 bg-indigo-600 mx-auto" />
-            <p className="text-slate-500 text-[10px] uppercase tracking-widest mt-4">
-              Secure Auth Protocol v4.2
-            </p>
           </div>
 
           <div className="space-y-6">
             <div className="space-y-1">
-              <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1">Identity</label>
+              <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1">login</label>
               <div className="relative">
                 <ShieldCheck className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" size={16} />
                 <input
                   type="text"
-                  placeholder="USERNAME"
+                  placeholder="LOGIN"
                   className="input-field pl-10 border-slate-200 dark:border-slate-800 focus:border-indigo-500 !bg-transparent"
                   value={login}
                   onChange={(e) => setLogin(e.target.value)}
@@ -84,7 +81,7 @@ export default function Login() {
             </div>
 
             <div className="space-y-1">
-              <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1">Access Key</label>
+              <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1">Password</label>
               <div className="relative">
                 <KeyRound className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" size={16} />
                 <input
@@ -109,7 +106,7 @@ export default function Login() {
               className="btn-primary w-full shadow-lg shadow-indigo-500/20 group overflow-hidden relative"
             >
               <span className="relative z-10 flex items-center gap-2">
-                Initialize Login
+                Log In
               </span>
               <div className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
             </button>
@@ -117,7 +114,6 @@ export default function Login() {
 
           <div className="mt-8 pt-6 border-t border-slate-100 dark:border-slate-800/50">
             <div className="flex justify-between items-center text-[9px] font-medium text-slate-500 tracking-tighter uppercase">
-              <span>Status: <span className="text-indigo-500 animate-pulse">Encrypted</span></span>
               <span>Hint: {AUTH.login} / {AUTH.password}</span>
             </div>
           </div>

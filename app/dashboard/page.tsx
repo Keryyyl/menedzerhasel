@@ -83,13 +83,13 @@ export default function Dashboard() {
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={16} />
               <input 
                 className="input-field pl-10" 
-                placeholder="Search resources..." 
+                placeholder="Wyszukaj po nazwie" 
                 value={search} 
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)} 
               />
             </div>
             <button onClick={() => router.push("/add")} className="btn-primary">
-              <Plus size={20} /> Add
+              <Plus size={20} /> DODAJ
             </button>
             <button 
               onClick={() => { sessionStorage.removeItem("authenticated"); router.push("/"); }} 

@@ -52,18 +52,18 @@ export default function Add() {
           className="flex items-center gap-2 text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white mb-8 transition-colors group"
         >
           <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
-          <span className="text-sm font-medium">Back to vault</span>
+          <span className="text-sm font-medium">Vault</span>
         </button>
 
         <div className="glass-card rounded-2xl p-8 border">
           <h1 className="text-2xl font-light text-slate-800 dark:text-white mb-6 tracking-tight">
-            Add New Password
+            Dodaj nowe hasło
           </h1>
 
           <div className="space-y-5">
             <div>
               <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                Service Name
+                Serwis
               </label>
               <input
                 type="text"
@@ -76,7 +76,7 @@ export default function Add() {
 
             <div>
               <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                Username / Email
+                Login / Email
               </label>
               <input
                 type="text"
@@ -89,11 +89,11 @@ export default function Add() {
 
             <div>
               <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                Password
+                Hasło
               </label>
               <input
                 type="password"
-                placeholder="Enter password"
+                placeholder="password"
                 className="input-field"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -105,7 +105,7 @@ export default function Add() {
               className="btn-primary flex items-center justify-center gap-2 mt-8 shadow-lg"
             >
               <Save size={18} />
-              Save Password
+              Zapisz
             </button>
           </div>
         </div>
